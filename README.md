@@ -1,10 +1,10 @@
 # OBS_CSV_TO_LITTLE_R
 
-Eric Allen, University of Delaware, Last Updated: 8/2/2018
+Eric Allen, University of Delaware, Last Updated: 8/20/2018
 Contact allenea@udel.edu with any questions.
 
 DISCLAIMER: 
-If using this code or referencing it for your own please acknowledge Eric Allen and the University of Delaware. I would like to know if people find this at all beneficial. Neither Eric Allen or the University of Delaware shall be liable for any damages direct, indirect, accidental, or otherwise and not responsible for any damages. This code is being released to help other students, researchers, and members of the community. This code shall not be used directly or modified for commercial sale or redistribution. Please contribute to the code if you have found a way to improve it so that your findings may benefit others. This code is open-source with the exception of commercial use. Please contact me with any questions, concerns, or contributions.
+If using this code or referencing it for your own project please acknowledge Eric Allen and the University of Delaware. Neither Eric Allen or the University of Delaware shall be liable for any damages direct, indirect, accidental, or otherwise and not responsible for any damages. This code is being released to help other students, researchers, and members of the community. This code shall not be used directly or modified for commercial sale or redistribution. Please contribute to the code if you have found a way to improve it so that your findings may benefit others. This code is open-source with the exception of commercial use. Please contact me with any questions, concerns, or contributions. Or if you find this benefitial.
 
 
 
