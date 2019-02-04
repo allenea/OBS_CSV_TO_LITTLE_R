@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 ##  Last Updated: 3/8/18
@@ -11,7 +11,7 @@
 ## This program iterates through all the data and finds if there is good
 ## data on both sides of that data point that are reliable and that can be
 ## used to extrapolate the data point. Then extrapolate by taking the
-## average between the two points. The first iteration looks at the 3 points
+## average between the two points. The first iteration looks at the 4 points
 ## on each side of the observation with NaN lat/lon value. The second
 ## iteration looks 3 points on each side. It checks outward to the furthest
 ## point and if there is a closer pair of observations it uses that
@@ -23,34 +23,34 @@
 ## Possible improvements to this code:
 ## give it an adjusted average location based on time between the observations and speed? of ferry. 
 #
-# This is very minimal.
 #
 ## This can be used to investigate where NaN lat/lon appear in the data. It is a
 ## common trend that the NaN's not smoothed are during day(s) where no
 ## observations are recored or at night time when the ferry is not running. 
 
-
-THIS IS TO TRY AND SALVAGE SOME OBSERVATIONS WE ARE VERY CONFIDENT IN THE ACCURACY OF THE FERRY LOCATION AND THE MEASUREMENTS.  IT LIKELY HAS NO IMPACT ON OUR SELECTED CASE STUDIES.
+12/18: ERIC REWROTE FROM MATLAB TO PYTHON. FOUND PROBLEMS MET DATA BEING LOST IN MATLAB PROGRAM.
+# Should be fixed here for whatever reason, Must have been indexing or something?
+THIS DATA WILL THEN BE PUT IN LITTLE_R FORMAT TO BE ASSIMILATED INTO OBSGRID for WRF
 """
 
-##CHANGE
-directory="/home/work/clouds_wind_climate/ferry_data/Prep4R/"
 
 import numpy as np
 import csv
 import pandas as pd
 import glob
-import time as t
+#import time as t
 from dateutil.parser import parse
+import os
+outdir = os.path.abspath('../Prep4R/')
 
 ###
 fileTypes = ['MET','EXO']
 for fType in fileTypes:
-    print fType
+    print (fType)
     HEADERS = []
     output = []
     for file in glob.glob("All-"+fType+"*.csv"):
-        print file
+        print (file)
         with open(file,'rU') as infile:
             raw = csv.reader(infile,dialect='excel',delimiter=',')
             count = 0
@@ -69,7 +69,7 @@ for fType in fileTypes:
     dtf = pd.DataFrame(HEADER,index=None)
     
                     
-    outstring = directory+"QualityControlled-"+fType+"-Data.csv"
+    outstring = outdir+"/QualityControlled-"+fType+"-Data.csv"
 
 #%%EXO Iteration
 
@@ -83,7 +83,7 @@ for fType in fileTypes:
         year_raw    = []; month_raw   = []; day_raw     = []; hour_raw    = []
         min_raw     = []; sec_raw     = []; ParseTime2   = []
         sizeNew2 = int(len(date_raw))
-        print "Size of EXO", sizeNew2
+        print ("Size of EXO", sizeNew2)
         for i in range(sizeNew2):
                 d = parse(date_raw[i])
                 ParseTime2.append(d)
@@ -128,8 +128,8 @@ for fType in fileTypes:
         exosumNaNLon = np.sum(np.isnan(lon_raw))
         exoWhereNaNLon = np.where(np.isnan(lon_raw))
         
-        print "Start of Exo loop one"
-        print exosumNaNLat, exosumNaNLon
+        print ("Start of Exo loop one")
+        print (exosumNaNLat, exosumNaNLon)
 
         ## FIRST EXO ITERATION
         # Iterate checking 4 to each side
@@ -175,14 +175,14 @@ for fType in fileTypes:
         exoWhereNaN2Lat = np.where(np.isnan(lat_raw2nd))
         exoWhereNaN2Lon = np.where(np.isnan(lon_raw2nd))
         
-        print "End of Exo loop one"
-        print exosumMissLat2, exosumMissLon2
+        print ("End of Exo loop one")
+        print (exosumMissLat2, exosumMissLon2)
         
         ### Second EXO Iteration
         for ii in range(4,len(exoNaNLat2)-4):
             if (exoNaNLat2[ii] == 1):
-                for i in range(1,4):
-                    for j in range(1,4):
+                for i in range(1,5):
+                    for j in range(1,5):
                         if (exoNaNLat2[ii-i] == 0):
                             temp1 = lat_raw2nd[ii-i];
                             temp5 = lon_raw2nd[ii-i];
@@ -218,8 +218,8 @@ for fType in fileTypes:
         exosumLat3 = np.sum(np.isnan(lat_raw3))
         exoNaNLon3 = np.isnan(lon_raw3)
         exosumLon3 = np.sum(np.isnan(lon_raw3))
-        print "End of Exo"
-        print exosumLat3, exosumLon3
+        print ("End of Exo")
+        print (exosumLat3, exosumLon3)
         
         exoTime0 = np.where(hour_raw == 0 and lat_raw3 == np.nan)
         exoTime1 = np.where(hour_raw == 1 and lat_raw3 == np.nan)
@@ -266,7 +266,7 @@ for fType in fileTypes:
         year_raw1   = []; month_raw1  = []; day_raw1    = []; hour_raw1   = []
         min_raw1    = []; sec_raw1    = []; ParseTime   = []
         sizeNew = int(len(date_raw1))
-        print "Size of MET", sizeNew
+        print ("Size of MET", sizeNew)
 
         for i in range(sizeNew):
                 d = parse(date_raw1[i])
@@ -311,8 +311,8 @@ for fType in fileTypes:
         metWhereNaNLon = np.where(np.isnan(lon_raw1))
         
                 
-        print "Starting Met Loop One"
-        print metsumLat1,metsumLon1
+        print ("Starting Met Loop One")
+        print (metsumLat1,metsumLon1)
         
                               
         ## FIRST MET ITERATION
@@ -358,15 +358,15 @@ for fType in fileTypes:
         metWhereNaNLat2 = np.where(np.isnan(lat1_raw2nd))
         metWhereNaNLon2 = np.where(np.isnan(lon1_raw2nd))
         
-        print "DONE Met Loop 1"
-        print metsumMissLat2nd,metsumMissLon2nd
+        print ("DONE Met Loop 1")
+        print (metsumMissLat2nd,metsumMissLon2nd)
         
                 
         ## SECOND MET ITERATION
         for ii in range(4,len(metNaNLat2nd)-4):
             if (metNaNLat2nd[ii] == 1):
-                for i in range(1,4):
-                    for j in range(1,4):
+                for i in range(1,5):
+                    for j in range(1,5):
                         if (metNaNLat2nd[ii-i] == 0):
                             temp1 = lat1_raw2nd[ii-i];
                             temp5 = lon1_raw2nd[ii-i];
@@ -410,8 +410,8 @@ for fType in fileTypes:
         metTime2 = np.where(hour_raw1 == 2 and lat1_raw3 == np.nan)
         metTime22 = np.where(hour_raw1 == 22 and lat1_raw3 == np.nan)
         
-        print "DONE WITH MET"
-        print metsumMissFinalLat,metsumMissFinalLon
+        print ("DONE WITH MET")
+        print (metsumMissFinalLat,metsumMissFinalLon)
         
         HEADING  = ["YEAR","MONTH","DAY","HOUR","MINUTE","SECOND",
                     "WIND_SPEED","WIND_DIRECTION","AIR_TEMPERATURE","RELATIVE_HUMIDITY",

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Last Updated on March 8th, 2018
@@ -9,10 +9,6 @@ Cloud Wind and Climate Research Group
 
 Combines all Cape May Lewes Ferry Meteorological data
 into 1 file and all  CMLF Water data into another file
-
-Does not include Dew Point Temperature or Geopotential Height
-
-*** Update Directory for your computer. Run from directory with yearly observation csv files
 """
 
 
@@ -22,19 +18,19 @@ import pandas as pd
 import glob
 import time as t
 from itertools import islice
-
+import os
 #%%
 endYear = int(t.ctime(t.time())[-4:])+1       
 fileTypes = ['MET','EXO']
-directory="/home/work/clouds_wind_climate/ferry_data/all_data/"
+outdir = os.path.abspath('../all_data/')
 
 for fType in fileTypes:
-    print fType
+    print (fType)
     HEADERS = []
     output = []
 
     for file in glob.glob("*-"+fType+".csv"):
-        print file
+        print (file)
         with open(file,'rU') as infile:
             raw = csv.reader(infile,dialect='excel',delimiter=',')
             count = 0
@@ -56,18 +52,18 @@ for fType in fileTypes:
     for year in range(2011,endYear):
         sYear = str(year)
         #for month in range(1,13):
-        print year
+        print (year)
         allfiles = []
-        outstring = directory+"All-"+fType+"-Data.csv"
+        outstring = outdir+"/All-"+fType+"-Data.csv"
     
         for file in glob.glob("*-"+fType+".csv"):
             if file[:4] == sYear:
                 allfiles.append(file)
-        print allfiles
+        print (allfiles)
 
         #%%
         filecount = len(allfiles)
-        print filecount
+        print (filecount)
         if filecount > 0:  
             outname = sYear +'-'+fType+'.csv'
             for i  in range(filecount):
@@ -80,7 +76,7 @@ for fType in fileTypes:
     df = pd.DataFrame(output,index=None)
     frames = [dtf,df]
     result  = pd.concat(frames)
-    print "SIZE", len(df)
+    print ("SIZE", len(df))
     #result.to_csv(outstring, index=False,index_label=False)
     #del sYear, outstring, df, output, result
     result2 = np.array(result)

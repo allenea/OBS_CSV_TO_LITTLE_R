@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Last Updated on March 8th, 2018
@@ -8,9 +8,6 @@ allenea@udel.edu
 
 Combines all months in a year into yearly data file (1 per year)
 
-Change the directory.
-Run from folder with monthly data files
-
 """
 
 import numpy as np
@@ -19,19 +16,17 @@ import pandas as pd
 import glob
 import time as t
 from itertools import islice
-
-##CHANGE THIS
-directory = "/home/work/clouds_wind_climate/ferry_data/yearly/"
-
+import os
 #%%
+outdir = os.path.abspath('../yearly/')
 
 fileTypes = ['MET','EXO']
 for fType in fileTypes:
-    print fType
+    print (fType)
     HEADERS = []
     
     for file in glob.glob("*-"+fType+".csv"):
-        print file
+        print (file)
         with open(file,'rU') as infile:
             raw = csv.reader(infile,dialect='excel',delimiter=',')
             count = 0
@@ -47,24 +42,22 @@ for fType in fileTypes:
     
     HEADER = np.array(HEADERS)
     dtf = pd.DataFrame(HEADER,index=None)
-    #%%              
-    
-                    
+    #%%                           
     for year in range(2011,int(t.ctime(t.time())[-4:])+1):
         sYear = str(year)
         #for month in range(1,13):
-        print year
+        print (year)
         allfiles = []
-        outstring = directory+sYear+"-"+fType+".csv"
+        outstring = outdir+"/"+sYear+"-"+fType+".csv"
     
         for file in glob.glob("*-"+fType+".csv"):
             if file[:4] == sYear:
                 allfiles.append(file)
-        print allfiles
+        print (allfiles)
 
         #%%
         filecount = len(allfiles)
-        print filecount
+        print (filecount)
         output = []
         if filecount > 0:  
             outname = sYear +'-'+fType+'.csv'

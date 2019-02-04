@@ -1,6 +1,6 @@
 # OBS_CSV_TO_LITTLE_R
 
-Eric Allen, University of Delaware, Last Updated: 8/20/2018
+Eric Allen, University of Delaware, Last Updated: 2/4/2019
 Contact allenea@udel.edu with any questions.
 
 DISCLAIMER: 
@@ -23,11 +23,6 @@ Data Available: http://www.deos.udel.edu/Ferry/data.php
 Notes how this works for me:
 
 - Temporary sensor height for CMLF is 20m. Once we get an accurate measurement it needs to be updated and everything reprocessed. 20m is a good estimate and more representative of the conditions than leaving elevation as 0.
-
-./processyearly.sh takes new data from Alex S. aurora drive and processes it into monthly-yearly-(All-by-type) data files. In converted data it creates images showing data availability for CMLF data. This data is all quality controlled. Eventually get this to continuously look for new data on Aurora and add to the text file so that the simulation can pull any observations that are available for nudging.
-
-At the same time a batch job is submitted to process all the DEOS data at 20 DEOS stations. It is reformatted (adding metadata) then all the stations are combined so that all the data is in one big file (with data not needed for Little_R removed). Then with the data from the Cape May Lewes Ferry, they are both processed into an ascii text file in advance of conversion into Little_R format (done at model-run-time). This framework should be the basis for a real-time model with data assimilation for Delaware. 
-
 
 
 
@@ -67,6 +62,7 @@ text_to_little_r: iterLittle_R.py figures out which data needs to be converted t
 
 
 text_to_little_r/OBS: This is a sample output of iterLittle_R.py from one of my runs. The data is in Little_R format.
+
 
 
 

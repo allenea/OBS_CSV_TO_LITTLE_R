@@ -1,58 +1,59 @@
-Station Name,Call Sign,County,ST,Latitude (DD),Longitude (DD),Elev (m),Sensor_Height (m)
-"Kitts_Hummock,_DE-NERR",DSJR,Kent,DE,39.0882,-75.4373,2.4,5
-"West_Grove,_PA-SECCRA",DSCR,Chester,PA,39.864444,-75.842222,197.5,0
-"Kennett_Square,_PA-Longwood",DLWG,Chester,PA,39.871667,-75.6825,140.2,0
-"Blackbird,_DE-NERR",DBKB,New Castle,DE,39.391667,-75.628056,12.5,0
-"Bethany_Beach,_DE-Boardwalk",DBBB,Sussex,DE,38.538889,-75.054167,3.4,3
-"Bethany_Beach,_DE-NGTS",DBNG,Sussex,DE,38.5464,-75.0627,2.1,3
-"Wilmington,_DE-NSWMC",DCHI,New Castle,DE,39.732778,-75.518333,7.6,0
-"Fair_Hill,_MD-NRMA",DFHM,Cecil,MD,39.7099,-75.8386,45.7,0
-"Sandtown,_DE-CSWMC",DSND,Kent,DE,39.037778,-75.729722,19.5,3
-"Jones_Crossroads,_DE-SSWMC",DJCR,Sussex,DE,38.594722,-75.436667,18.6,3
-"Newark,_DE-Ag_Farm",DAGF,New Castle,DE,39.6695,-75.7503,32.3,0
-"Georgetown,_DE-REC",DGES,Sussex,DE,38.6361,-75.455,13.7,3
-"Harbeson,_DE-REC",DWAR,Sussex,DE,38.679167,-75.247222,10.1,3
-"Laurel,_DE-Airport",DLAU,Sussex,DE,38.5415,-75.5927,8.8,3
-"Townsend,_DE-REC",DTOW,New Castle,DE,39.3911,-75.7482,21,0
-"Harrington,_DE-Raceway",DHAR,Kent,DE,38.9113,-75.5767,16.8,3
-"Dover,_DE-DSFS",DDFS,Kent,DE,39.1697,-75.593,15.5,3
-"Bridgeville,_DE-SPS",DBRG,Sussex,DE,38.7206,-75.5886,11,3
-"Glasgow,_DE-SPB",DGLW,New Castle,DE,39.6059,-75.7269,19.2,0
-"Hockessin,_DE-VFC",DHOC,New Castle,DE,39.7887,-75.7008,77.1,0
-"Milford,_DE-MTS",DMIL,Sussex,DE,38.881667,-75.439722,12.2,3
-"Stockley,_DE-DHSS",DSTK,Sussex,DE,38.628333,-75.319444,9.4,3
-"Ellendale,_DE-DHSS",DELN,Sussex,DE,38.808333,-75.427222,14.9,3
-"Kennett_Square,_PA-Bucktoe",DBUK1,Chester,PA,39.82,-75.727222,105.8,0
-"Smyrna,_DE-DASEF",DSMY,Kent,DE,39.277222,-75.581111,6.4,3
-"Indian_River_Inlet,_DE-LSS",DIRL,Sussex,DE,38.633056,-75.066389,4.6,4.6
-"Rehoboth_Beach,_DE-Boardwalk",DRHB,Sussex,DE,38.720833,-75.076667,3.7,3
-"Hockessin,_DE-Mt._Cuba",DMTC,New Castle,DE,39.786944,-75.646944,89.6,0
-"Seaford,_DE-Oak_Grove",DSEA,Sussex,DE,38.6525,-75.703611,13.1,3
-"Greenwood,_DE-Adamsville",DADV,Kent,DE,38.831389,-75.675833,13.1,3
-"Kenton,_DE-Blackiston",DBLK,Kent,DE,39.241667,-75.740833,17.1,3
-"Delmar,_DE-Gumboro",DGUM,Sussex,DE,38.480278,-75.3675,13.1,3
-"Greenville,_DE-Winterthur",DGRN,New Castle,DE,39.8025,-75.607222,130,0
-"New Castle,_DE-DMV",DDMV,New Castle,DE,39.668889,-75.626667,22.6,0
-"Wilmington,_DE-Prices_Corner",DPRC,New Castle,DE,39.749167,-75.610833,46.9,0
-"Wilmington,_DE-Talley",DTLY,New Castle,DE,39.775278,-75.527778,73.2,0
-"Claymont,_DE-Park",DCLY,New Castle,DE,39.809167,-75.455556,31.1,0
-"Newark,_DE-White_Clay_Creek",DWCC,New Castle,DE,39.729167,-75.731111,85,0
-"Nottingham,_PA-Park",DNOT,Chester,PA,39.741667,-76.046111,134,0
-"Glenmoore,_PA-Springton_Manor",DSGM,Chester,PA,40.069444,-75.7775,189,0
-"Devault,_PA-Tredyffrin",DTDF,Chester,PA,40.071111,-75.520833,76,0
-"West_Chester,_PA-GSC",DWCH,Chester,PA,39.958611,-75.585,127,0
-"Atglen,_PA-Wolf's_Hollow",DWHW,Chester,PA,39.923333,-75.988056,202,0
-"Chester_Springs,_PA-Park",DWPK,Chester,PA,40.085833,-75.615833,108,0
-"Warwick,_PA-Park",DWWK,Chester,PA,40.164722,-75.726111,124,0
-"Marshallton,_PA-West_Bradford",DWBD,Chester,PA,39.942778,-75.716944,102,0
-"Millsboro,_DE-Long_Neck",DLNK,Sussex,DE,38.616111,-75.118056,3,0
-"Lewes,_DE-Cape_Henlopen",DCPH,Sussex,DE,38.770278,-75.085278,7,0
-"Woodside,_DE-Willow_Grove",DWDS,Kent,DE,39.060556,-75.639722,14,3
-"Dover,_DE-Paradee",DPAR,Kent,DE,39.146389,-75.503333,11,0
-"Port_Penn,_DE-VFC",DPPN,New Castle,DE,39.5175,-75.585833,4,0
-"Frederica,_DE",DFRE,Kent,DE,38.996389,-75.438056,7,0
-"Lewes,_DE-University",DLEW,Sussex,DE,38.784167,-75.158056,3.7,0
-"Lewes,_DE-Nassau",DNAS,Sussex,DE,38.712778,-75.148611,9,0
-"North_East,_MD-Landfill",DNEM,Cecil,MD,39.597222,-75.913611,56.4,0
-"Prime_Hook,_DE-NWR",DPMH,Sussex,DE,38.828083,-75.251528,2.1,0
-"Dagsboro,_DE",DDAG,Sussex,DE,38.542222,-75.234722,7,0
+Station Name,Call Sign,County,ST,Latitude (DD),Longitude (DD),Elev (m),Sensor_Height (m),Temp_Sensor (m)
+"Kitts_Hummock,_DE-NERR",DSJR,Kent,DE,39.088200,-75.437300,2.44,5.00,3.00
+"West_Grove,_PA-SECCRA",DSCR,Chester,PA,39.864444,-75.842222,197.51,3.00,2.00
+"Kennett_Square,_PA-Longwood",DLWG,Chester,PA,39.871667,-75.682500,140.21,3.00,2.00
+"Blackbird,_DE-NERR",DBKB,New Castle,DE,39.391667,-75.628056,12.50,6.00,2.00
+"Bethany_Beach,_DE-Boardwalk",DBBB,Sussex,DE,38.538889,-75.054167,3.35,4.50,3.00
+"Bethany_Beach,_DE-NGTS",DBNG,Sussex,DE,38.546400,-75.062700,2.13,3.00,2.00
+"Wilmington,_DE-NSWMC",DCHI,New Castle,DE,39.732778,-75.518333,7.62,3.70,3.00
+"Fair_Hill,_MD-NRMA",DFHM,Cecil,MD,39.709900,-75.838600,45.72,3.50,2.00
+"Sandtown,_DE-CSWMC",DSND,Kent,DE,39.037778,-75.729722,19.51,3.70,3.00
+"Jones_Crossroads,_DE-SSWMC",DJCR,Sussex,DE,38.594722,-75.436667,18.59,3.70,3.00
+"Newark,_DE-Ag_Farm",DAGF,New Castle,DE,39.669500,-75.750300,32.31,3.00,2.00
+"Georgetown,_DE-REC",DGES,Sussex,DE,38.636100,-75.455000,13.72,10.00,2.00
+"Harbeson,_DE-REC",DWAR,Sussex,DE,38.679167,-75.247222,10.06,3.00,2.00
+"Laurel,_DE-Airport",DLAU,Sussex,DE,38.541500,-75.592700,8.84,3.00,2.00
+"Townsend,_DE-REC",DTOW,New Castle,DE,39.391100,-75.748200,21.03,3.00,2.00
+"Harrington,_DE-Raceway",DHAR,Kent,DE,38.911300,-75.576700,16.76,3.00,2.00
+"Dover,_DE-DSFS",DDFS,Kent,DE,39.169700,-75.593000,15.54,3.00,2.00
+"Bridgeville,_DE-SPS",DBRG,Sussex,DE,38.720600,-75.588600,10.97,3.00,2.00
+"Glasgow,_DE-SPB",DGLW,New Castle,DE,39.605900,-75.726900,19.20,3.00,2.00
+"Hockessin,_DE-VFC",DHOC,New Castle,DE,39.788700,-75.700800,77.11,3.00,2.00
+"Milford,_DE-MTS",DMIL,Sussex,DE,38.881667,-75.439722,12.19,3.70,3.00
+"Stockley,_DE-DHSS",DSTK,Sussex,DE,38.628333,-75.319444,9.45,3.00,2.00
+"Ellendale,_DE-DHSS",DELN,Sussex,DE,38.808333,-75.427222,14.94,3.00,2.00
+"Kennett_Square,_PA-Bucktoe",DBUK1,Chester,PA,39.820000,-75.727222,105.77,3.00,2.00
+"Smyrna,_DE-DASEF",DSMY,Kent,DE,39.277222,-75.581111,6.40,3.00,2.00
+"Indian_River_Inlet,_DE-LSS",DIRL,Sussex,DE,38.633056,-75.066389,4.57,5.40,4.00
+"Rehoboth_Beach,_DE-Boardwalk",DRHB,Sussex,DE,38.720833,-75.076667,3.66,3.80,3.00
+"Hockessin,_DE-Mt._Cuba",DMTC,New Castle,DE,39.786944,-75.646944,89.61,3.00,2.00
+"Seaford,_DE-Oak_Grove",DSEA,Sussex,DE,38.652500,-75.703611,13.11,3.00,2.00
+"Greenwood,_DE-Adamsville",DADV,Kent,DE,38.831389,-75.675833,13.11,3.00,2.00
+"Kenton,_DE-Blackiston",DBLK,Kent,DE,39.241667,-75.740833,17.07,3.00,2.00
+"Delmar,_DE-Gumboro",DGUM,Sussex,DE,38.480278,-75.367500,13.11,3.00,2.00
+"Greenville,_DE-Winterthur",DGRN,New Castle,DE,39.802500,-75.607222,130.00,3.00,2.00
+"New Castle,_DE-DMV",DDMV,New Castle,DE,39.668889,-75.626667,22.56,3.00,2.00
+"Wilmington,_DE-Prices_Corner",DPRC,New Castle,DE,39.749167,-75.610833,46.94,3.00,2.00
+"Wilmington,_DE-Talley",DTLY,New Castle,DE,39.775278,-75.527778,73.15,,2.00
+"Claymont,_DE-Park",DCLY,New Castle,DE,39.809167,-75.455556,31.09,3.00,2.00
+"Newark,_DE-White_Clay_Creek",DWCC,New Castle,DE,39.729167,-75.731111,85.04,3.00,2.00
+"Nottingham,_PA-Park",DNOT,Chester,PA,39.741667,-76.046111,133.99,3.00,2.00
+"Glenmoore,_PA-Springton_Manor",DSGM,Chester,PA,40.069444,-75.777500,189.01,3.00,2.00
+"Devault,_PA-Tredyffrin",DTDF,Chester,PA,40.067917,-75.474389,60.00,3.00,2.00
+"West_Chester,_PA-GSC",DWCH,Chester,PA,39.939528,-75.554639,99.00,3.00,2.00
+"Atglen,_PA-Wolf's_Hollow",DWHW,Chester,PA,39.923333,-75.988056,201.99,3.00,2.00
+"Chester_Springs,_PA-Park",DWPK,Chester,PA,40.085833,-75.615833,107.99,3.00,2.00
+"Warwick,_PA-Park",DWWK,Chester,PA,40.164722,-75.726111,123.99,3.00,2.00
+"Marshallton,_PA-West_Bradford",DWBD,Chester,PA,39.942778,-75.716944,101.99,3.00,2.00
+"Millsboro,_DE-Long_Neck",DLNK,Sussex,DE,38.616111,-75.118056,3.05,3.00,2.00
+"Lewes,_DE-Cape_Henlopen",DCPH,Sussex,DE,38.770278,-75.085278,7.01,6.00,3.00
+"Woodside,_DE-Willow_Grove",DWDS,Kent,DE,39.060556,-75.639722,13.99,3.00,2.00
+"Dover,_DE-Paradee",DPAR,Kent,DE,39.146389,-75.503333,11.00,,2.00
+"Port_Penn,_DE-VFC",DPPN,New Castle,DE,39.517500,-75.585833,3.99,3.00,2.00
+"Frederica,_DE",DFRE,Kent,DE,38.996389,-75.438056,7.01,,2.00
+"Lewes,_DE-University",DLEW,Sussex,DE,38.784167,-75.158056,3.66,3.00,2.00
+"Lewes,_DE-Nassau",DNAS,Sussex,DE,38.712778,-75.148611,8.99,3.00,2.00
+"North_East,_MD-Landfill",DNEM,Cecil,MD,39.597222,-75.913611,56.39,6.00,2.00
+"Prime_Hook,_DE-NWR",DPMH,Sussex,DE,38.828083,-75.251528,2.13,6.00,
+"Dagsboro,_DE",DDAG,Sussex,DE,38.542222,-75.234722,7.00,3.00,2.00
+"Selbyville, DE",DSBY,Sussex,DE,38.47138889,-75.21444444,7.62,3.00,
