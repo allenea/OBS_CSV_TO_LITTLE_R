@@ -6,17 +6,6 @@ allenea@udel.edu
 Clouds_Wind_Climate Workgroup, University of Delaware
 Last Updated: 2/6/2020
 
-Geopotential Height data was not collected for this study and not processed for assimilation
-
-DEOS and Cape May Lewes Ferry is being reformatted into Little_R format required for OBSGRID.
-Another file should be made for CMLF only.
-
-Open/Read the DEOS + CMLF data from the text file created in prep4r.
-In prep4r Relative Humidity as set with too few percision in the
-pre-processing program. Read in as float along with date.
-Change date to an int --> string. Relative Humidity will also be changed to a string.
-Look to do this in the prep4r in the future.
-
 OBSGRID considers within 30 mins as same time - merged. Option commented out to
  do 5-minute. New OBSGRID treats with provided time instead of analysis time.
  For now leave as 30 minute (considered for any analysis time), but only give
